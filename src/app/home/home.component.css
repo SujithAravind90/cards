@@ -1,0 +1,152 @@
+.tabs {
+  list-style: none;
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: flex-start;
+}
+.tabs:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.tabs input[type=radio] {
+  display:none;
+}
+.tabs label {
+  display: inline-block;
+  min-width: 25%;
+ flex: 1 1 25%;
+  color: #ccc;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
+  transition: all 0.5s;
+}
+
+.tabs label span {
+  display: none;
+ font-size: 1rem;
+}
+
+.tabs label:hover {
+  color: #3498db;
+
+.icon {
+    border-color: #3498db;
+  background-position: 50px 0;
+  background-size: 100px 50px;
+}
+}
+
+.tab__content {
+  display: none;
+ text-align: center;
+  width: 80%;
+ margin: 0 auto;
+  box-sizing: border-box;
+  background-color:#ffffff;
+ margin-top: 2rem;
+}
+
+.tab__content * {
+  -webkit-animation: scale 0.2s ease-in-out;
+  -moz-animation: scale 0.2s ease-in-out;
+  animation: scale 0.2s ease-in-out;
+}
+@keyframes scale {
+0% {
+  transform: scale(0.9);
+  opacity: 0;
+  }
+50% {
+  transform: scale(1.01);
+  opacity: 0.5;
+  }
+100% {
+  transform: scale(1);
+  opacity: 1;
+}
+}
+
+.tabs [id^="tab"]:checked + label {
+  background: #FFF;
+  color: #3498db;
+}
+
+.tabs [id^="tab"]:checked + label i {
+  border-color: #3498db;
+ background-position: 50px 0;
+ background-size: 100px 50px;
+}
+
+ #tab1:checked ~ #tab__content--1,
+ #tab2:checked ~ #tab__content--2,
+ #tab3:checked ~ #tab__content--3,
+ #tab4:checked ~ #tab__content--4{
+   display: block;
+}
+
+@media (min-width: 768px) {
+  .tabs label span {
+      display: block;
+  }
+}
+
+.icon {
+margin-top: 1rem;
+display: inline-block;
+width: 54px;
+height: 54px;
+border-radius: 100%;
+border: 2px solid #CACFD6;
+background-size: 100px 50px;
+box-sizing: border-box;
+}
+
+.email-cal {
+background: white url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/45910/icon_--_sync.png');
+background-position: 0 0;
+background-size: 100px 50px;
+}
+
+.snapshot {
+background: white url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/45910/icon_--_snapshots.png');
+background-size: 100px 50px;
+background-position: 0 0;
+}
+
+.inbox-apps {
+background: white url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/45910/icon_--_templates.png');
+background-size: 100px 50px;
+background-position: 0 0;
+}
+
+.log-calls {
+background: white url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/45910/icon_--_log_call.png');
+background-size: 100px 50px;
+background-position: 0 0;
+}
+
+.tracking {
+background: white url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/45910/icon_--_tracking.png');
+background-size: 100px 50px;
+background-position: 0 0;
+}
+
+.book-meetigns {
+background: white url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/45910/icon_--_book_meeting.png');
+background-size: 100px 50px;
+background-position: 0 0;
+}
+
+.send-later {
+background: white url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/45910/icon_--_send_later.png');
+background-size: 100px 50px;
+background-position: 0 0;
+}
+
+.follow-up {
+background: white url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/45910/icon_--_follow_up.png');
+background-size: 100px 50px;
+background-position: 0 0;
+}
