@@ -19,7 +19,7 @@
   color: #ccc;
   text-align: center;
   cursor: pointer;
-  -webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -149,4 +149,9 @@ background-position: 0 0;
 background: white url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/45910/icon_--_follow_up.png');
 background-size: 100px 50px;
 background-position: 0 0;
+}
+@media only screen and (max-width: 500px) {
+img{
+  width: 100%;
+}
 }
